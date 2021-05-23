@@ -1,9 +1,9 @@
-# react-modal-resizable-draggable
+# react-modal-touch
 
 Accessible modal dialog component for React.JS
 
 # Demo
-* [link to demo](https://wwan5803.github.io/react-modal-resizable-draggable/)
+* [link to demo](https://divakarmanivel.github.io/react-modal-touch/)
 
 # Keyboard feature support
 * arrowLeft: move left 20px
