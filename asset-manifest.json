@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-modal-touch/static/css/main.1fb54e63.chunk.css",
-    "main.js": "/react-modal-touch/static/js/main.91e348a6.chunk.js",
-    "main.js.map": "/react-modal-touch/static/js/main.91e348a6.chunk.js.map",
+    "main.css": "/react-modal-touch/static/css/main.6ed42a60.chunk.css",
+    "main.js": "/react-modal-touch/static/js/main.4993d025.chunk.js",
+    "main.js.map": "/react-modal-touch/static/js/main.4993d025.chunk.js.map",
     "runtime-main.js": "/react-modal-touch/static/js/runtime-main.44f2060f.js",
     "runtime-main.js.map": "/react-modal-touch/static/js/runtime-main.44f2060f.js.map",
-    "static/js/2.60fbcb75.chunk.js": "/react-modal-touch/static/js/2.60fbcb75.chunk.js",
-    "static/js/2.60fbcb75.chunk.js.map": "/react-modal-touch/static/js/2.60fbcb75.chunk.js.map",
+    "static/js/2.6c3759b2.chunk.js": "/react-modal-touch/static/js/2.6c3759b2.chunk.js",
+    "static/js/2.6c3759b2.chunk.js.map": "/react-modal-touch/static/js/2.6c3759b2.chunk.js.map",
     "index.html": "/react-modal-touch/index.html",
-    "static/css/main.1fb54e63.chunk.css.map": "/react-modal-touch/static/css/main.1fb54e63.chunk.css.map",
-    "static/js/2.60fbcb75.chunk.js.LICENSE.txt": "/react-modal-touch/static/js/2.60fbcb75.chunk.js.LICENSE.txt"
+    "static/css/main.6ed42a60.chunk.css.map": "/react-modal-touch/static/css/main.6ed42a60.chunk.css.map",
+    "static/js/2.6c3759b2.chunk.js.LICENSE.txt": "/react-modal-touch/static/js/2.6c3759b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.44f2060f.js",
-    "static/js/2.60fbcb75.chunk.js",
-    "static/css/main.1fb54e63.chunk.css",
-    "static/js/main.91e348a6.chunk.js"
+    "static/js/2.6c3759b2.chunk.js",
+    "static/css/main.6ed42a60.chunk.css",
+    "static/js/main.4993d025.chunk.js"
   ]
 }
