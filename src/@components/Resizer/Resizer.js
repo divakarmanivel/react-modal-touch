@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./Resizer.scss";
+import PropTypes from 'prop-types';
+import "./Resizer.css";
 
 class Resizer extends Component {
   constructor(props) {
@@ -22,6 +23,14 @@ class Resizer extends Component {
       />
     );
   }
+}
+
+Resizer.propTypes = {
+  updateStateResizing: PropTypes.func,
+}
+
+Resizer.defaultProps = {
+  updateStateResizing: () => {}
 }
 
 export default Resizer;

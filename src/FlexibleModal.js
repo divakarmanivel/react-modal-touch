@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import BaseModal from './@components/BaseModal';
 import Resizer from './@components/Resizer';
 
-import './FlexibleModal.scss';
+import './FlexibleModal.css';
 
 class FlexibleModal extends Component {
 	constructor(props) {
@@ -223,7 +223,7 @@ class FlexibleModal extends Component {
 	}
 
 	render() {
-		const { isOpen, isMinimised, onRequestClose, onRequestMinimise, onRequestRecover, disableResize,className,onFocus } = this.props;
+		const { isOpen, isMinimised, onRequestClose, onRequestMinimise, onRequestRecover, disableResize, className, onFocus } = this.props;
 		return (
 			<div className="flexible-modal-container">
 				{/*this mask is a must*/}
@@ -301,20 +301,34 @@ class FlexibleModal extends Component {
 	}
 }
 
-// TextBox.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   label: PropTypes.string.isRequired,
-//   className: PropTypes.string,
-//   required: PropTypes.bool,
-//   value: PropTypes.string,
-//   onChange: PropTypes.func,
-// }
+FlexibleModal.propTypes = {
+	className: PropTypes.string,
+	minWidth: PropTypes.number,
+	minHeight: PropTypes.number,
+	isOpen: PropTypes.bool.isRequired,
+	isMinimised: PropTypes.bool,
+	onRequestClose: PropTypes.func.isRequired,
+	onRequestMinimise: PropTypes.func,
+	onRequestRecover: PropTypes.func,
+	onFocus: PropTypes.func,
+	disableKeystroke: PropTypes.bool,
+	disableResize: PropTypes.bool,
+	disableMove: PropTypes.bool,
+	disableVerticalMove: PropTypes.bool,
+	disableHorizontalMove: PropTypes.bool
+}
 
-// TextBox.defaultProps = {
-//   className: "",
-//   required: false,
-//   value: "",
-//   onChange: () => {}
-// }
+FlexibleModal.defaultProps = {
+	className: "",
+	isMinimised: false,
+	onRequestMinimise: () => {},
+	onRequestRecover: () => {},
+	onFocus: () => {},
+	disableKeystroke: false,
+	disableResize: false,
+	disableMove: false,
+	disableVerticalMove: false,
+	disableHorizontalMove: false
+}
 
 export default FlexibleModal;

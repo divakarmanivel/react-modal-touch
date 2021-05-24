@@ -1,16 +1,16 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { FaBars } from 'react-icons/fa';
 import { CSSTransition } from 'react-transition-group';
-import PropTypes from 'prop-types';
 
-import './BaseModal.scss';
+import './BaseModal.css';
 
 class BaseModal extends Component {
 	render() {
-		const { isDragging, width, height, top, left, isOpen, isMinimised, onRequestRecover,className,onFocus } = this.props;
+		const { isDragging, width, height, top, left, isOpen, isMinimised, onRequestRecover, className, onFocus } = this.props;
 		if (isOpen) {
 			return (
-				<Fragment>
+				<>
 					<CSSTransition in={!isMinimised} timeout={300} classNames="minimise" unmountOnExit>
 						<div
 							onClick={onFocus}
@@ -29,7 +29,7 @@ class BaseModal extends Component {
 							<FaBars />
 						</button>
 					)}
-				</Fragment>
+				</>
 			);
 		} else {
 			return null;
@@ -37,20 +37,28 @@ class BaseModal extends Component {
 	}
 }
 
-// BaseModal.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   label: PropTypes.string.isRequired,
-//   className: PropTypes.string,
-//   required: PropTypes.bool,
-//   value: PropTypes.string,
-//   onChange: PropTypes.func,
-// }
+BaseModal.propTypes = {
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  top: PropTypes.number.isRequired,
+  left: PropTypes.number.isRequired,
+  className: PropTypes.string,
+  onFocus: PropTypes.func,
+  onRequestRecover: PropTypes.func,
+  isDragging: PropTypes.bool,
+  isMinimised: PropTypes.bool,
+  isOpen: PropTypes.bool,
+  transitionName: PropTypes.string
+}
 
-// BaseModal.defaultProps = {
-//   className: "",
-//   required: false,
-//   value: "",
-//   onChange: () => {}
-// }
+BaseModal.defaultProps = {
+	className: "",
+	onFocus: () => {},
+	onRequestRecover: () => {},
+	isDragging: false,
+	isMinimised: false,
+	isOpen: false,
+	transitionName: "modal-anim"
+}
 
 export default BaseModal;
