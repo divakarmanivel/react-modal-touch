@@ -5,6 +5,10 @@ Accessible modal dialog component for React.JS
 # Demo
 * [link to demo](https://divakarmanivel.github.io/react-modal-touch/)
 
+# Touch feature support
+* touch drag to move the modal
+* touch drag on the cursor in bottom to resize
+
 # Keyboard feature support
 * arrowLeft: move left 20px
 * arrowRight: move right 20px
@@ -29,50 +33,16 @@ Accessible modal dialog component for React.JS
 To install, you can use [npm](https://npmjs.org/) or [yarn](https://yarnpkg.com):
 
 
-    $ npm install react-modal-resizable-draggable
-    $ yarn add react-modal-resizable-draggable
+    $ npm install react-modal-touch
+    $ yarn add react-modal-touch
 
 
 ## Usage
-Add following css style to your css file
-```css
-.flexible-modal {
-  position: absolute;
-  z-index: 1;
-  border: 1px solid #ccc;
-  background: white;
-}
-.flexible-modal-mask {
-  position: fixed;
-  height: 100%;
-  background: rgba(55, 55, 55, 0.6);
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-}
-.flexible-modal-resizer {
-  position:absolute;
-  right:0;
-  bottom:0;
-  cursor:se-resize;
-  margin:5px;
-  border-bottom: solid 2px #333;
-  border-right: solid 2px #333;
-}
-.flexible-modal-drag-area{
-  background: rgba(22, 22, 333, 0.2);
-  height: 50px;
-  position:absolute;
-  right:0;
-  top:0;
-  cursor:move;
-}
-```
 
-The Modal object has one required prop:
+The Modal object has two required prop:
 
 - `isOpen` to render its children.
+- `onRequestClose` to close the modal.
 
 Optional prop:
 
@@ -82,7 +52,6 @@ Optional prop:
 - `initHeight` The initial width of the modal(default 400).
 - `top` The position of the modal.
 - `left` The position of the modal.
-- `onRequestClose` to close the modal.
 - `disableMove` to disable the drag function(default false).
 - `disableResize` to disable the resize function(default false).
 - `disableVerticalResize` to disable the vertical resize function(default false).
@@ -97,7 +66,7 @@ Optional prop:
 Example:
 
 ```jsx
-<Modal
+<FlexibleModal
   isOpen={bool}
   onRequestClose={this.closeModal}
   onFocus={() => console.log("Modal is clicked")}
@@ -107,7 +76,7 @@ Example:
 >
   <h1>Modal Content</h1>
   <p>Etc.</p>
-</Modal>
+</FlexibleModal>
 ```
 
 
