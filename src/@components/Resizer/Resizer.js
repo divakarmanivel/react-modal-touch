@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import "./Resizer.css";
+import "./Resizer.scss";
 
 class Resizer extends Component {
   constructor(props) {

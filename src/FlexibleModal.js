@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import BaseModal from './@components/BaseModal';
 import Resizer from './@components/Resizer';
 
-import './FlexibleModal.css';
+import './FlexibleModal.scss';
 
 class FlexibleModal extends Component {
 	constructor(props) {

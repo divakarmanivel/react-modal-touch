@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FaBars } from 'react-icons/fa';
 import { CSSTransition } from 'react-transition-group';
 
-import './BaseModal.css';
+import './BaseModal.scss';
 
 class BaseModal extends Component {
 	render() {
