@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import FlexibleModal from 'react-modal-touch';
+
 import logo from './logo.svg';
 import './App.css';
-import FlexibleModal from 'react-modal-touch';
 
 class App extends Component {
     constructor() {
