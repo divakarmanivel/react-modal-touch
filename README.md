@@ -1,9 +1,8 @@
-# react-modal-touch
+# react-modal-touch [![npm package](https://img.shields.io/npm/v/react-modal-touch.svg?style=flat-square)](https://www.npmjs.org/package/react-modal-touch)
 
-Accessible modal dialog component for React.JS
+[![NPM](https://nodei.co/npm/react-pure-modal.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-modal-touch/)
 
-# Demo
-* [link to demo](https://divakarmanivel.github.io/react-modal-touch/)
+Accessible modal dialog component for React. [See the demo](https://divakarmanivel.github.io/react-modal-touch/)
 
 # Touch feature support
 * touch drag to move the modal
@@ -23,10 +22,7 @@ Accessible modal dialog component for React.JS
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Styles](#styles)
 * [Examples](#examples)
-* [Testing](#testing)
-* [Demos](#demos)
 
 ## Installation
 
@@ -142,4 +138,3 @@ class App extends Component {
 export default App;
 
 ```
-
