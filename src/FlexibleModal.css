@@ -37,9 +37,6 @@
 }
 
 .flexible-modal-drag-area {
-    /* background: #0e0e0e;
-    cursor: move;
-    border-radius: 4px 4px 0 0; */
     height: 50px;
     position: absolute;
     right: 0;

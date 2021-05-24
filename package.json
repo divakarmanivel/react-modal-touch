@@ -1,6 +1,6 @@
 {
   "name": "react-modal-touch",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "This is a resizable and draggable react modal that supports touch",
   "repository": {
     "type": "git",
@@ -20,8 +20,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --env=dev --watch",
-    "build": "webpack --env=production"
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "author": {
     "name": "Divakar Manivel",

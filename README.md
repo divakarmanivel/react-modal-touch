@@ -87,7 +87,7 @@ Inside an app:
 ```jsx
 import React, {Component} from 'react';
 import './App.css';
-import ReactModal from 'react-modal-touch';
+import FlexibleModal from 'react-modal-touch';
 
 class App extends Component {
 
@@ -119,12 +119,12 @@ class App extends Component {
                 >
                     Open modal
                 </button>
-                <ReactModal initWidth={800} initHeight={400} 
+                <FlexibleModal initWidth={800} initHeight={400} 
                 onFocus={() => console.log("Modal is clicked")}
                 className={"my-modal-custom-class"}
                 onRequestClose={this.closeModal} 
                 isOpen={this.state.modalIsOpen}>
-                    <h3>My Modal</h3>
+                    <h3>Flexible Modal</h3>
                     <div className="body">
                         <p>This is the modal&apos;s body.</p>
                     </div>
@@ -133,7 +133,7 @@ class App extends Component {
                     >
                         Close modal
                     </button>
-                </ReactModal>
+                </FlexibleModal>
             </div>
         );
     }
