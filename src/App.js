@@ -21,11 +21,13 @@ class App extends Component {
     }
 
     render() {
+        const { modalIsOpen } = this.state;
+
         return (
             <div className="App">
                 <header className="App-header">
                     <h1 className="App-title">Welcome to Flexible Modal</h1>
-                    <button onClick={this.openModal}>Open modal</button>
+                    {!modalIsOpen && <button onClick={this.openModal}>Open modal</button>}
                 </header>
                 <FlexibleModal
                     onRequestClose={this.closeModal}
