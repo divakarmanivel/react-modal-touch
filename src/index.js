@@ -1,3 +1,1 @@
-import FlexibleModal from './FlexibleModal';
-
-export { FlexibleModal }; 
+export { default } from './FlexibleModal';

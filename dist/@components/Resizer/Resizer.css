@@ -1,9 +1,0 @@
-.flexible-modal-resizer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    cursor: se-resize;
-    margin: 5px;
-    border-bottom: solid 2px #333;
-    border-right: solid 2px #333;
-}
