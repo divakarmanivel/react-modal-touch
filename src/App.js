@@ -1,26 +1,22 @@
 import React, {Component} from 'react';
 import FlexibleModal from 'react-modal-touch';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             modalIsOpen: false
         };
-
-        this.openModal = this.openModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
     }
 
-    openModal() {
+    openModal = () => {
         this.setState({modalIsOpen: true});
     }
 
-    closeModal() {
+    closeModal = () => {
         this.setState({modalIsOpen: false});
     }
 
@@ -28,27 +24,18 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">Welcome to React</h1>
+                    <h1 className="App-title">Welcome to Flexible Modal</h1>
+                    <button onClick={this.openModal}>Open modal</button>
                 </header>
-                <button
-                    style={{marginTop: 100, padding: 15, backgroundColor:'black', color: '#ffffff'}}
-                    onClick={this.openModal}
-                >
-                    Open modal
-                </button>
-                <FlexibleModal initWidth={400} initHeight={300} onRequestClose={this.closeModal}
-                            isOpen={this.state.modalIsOpen}>
-                    <h3>Flexible Modal</h3>
-                    <div className="body">
-                        <p>Mouse hover to move the modal :)</p>
-                        <p>Use the right bottom arrow to resize me ^_^</p>
-                    </div>
-                    <button
-                        onClick={this.closeModal}
-                    >
-                        Close modal
-                    </button>
+                <FlexibleModal
+                    onRequestClose={this.closeModal}
+                    isOpen={this.state.modalIsOpen}>
+                        <h3>Modal</h3>
+                        <div className="body">
+                            <p>Use mouse/touch and drag to move the modal :)</p>
+                            <p>Use the right bottom arrow to resize ^_^</p>
+                        </div>
+                        <button onClick={this.closeModal}>Close modal</button>
                 </FlexibleModal>
             </div>
         );
