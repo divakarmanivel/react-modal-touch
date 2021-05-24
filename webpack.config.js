@@ -9,6 +9,7 @@ var devOption = {
     path: path.resolve(__dirname, "build"),
     filename: "[name].js",
     libraryTarget: "commonjs2", // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
+    clean: true,
   },
   module: {
     rules: [
@@ -54,13 +55,15 @@ var productOption = {
     publicPath: "/",
     libraryTarget: "umd",
     library: "FlexibleReactModal",
+    clean: true,
   },
 
   // output: {
   //     path: path.resolve(__dirname, 'build'),
   //     chunkFilename: '[name].[chunkhash:8].js',
   //     filename: '[name].[chunkhash:8].js',
-  //     libraryTarget: 'commonjs2'
+  //     libraryTarget: 'commonjs2',
+  //     clean: true,
   // },
   module: {
     rules: [
