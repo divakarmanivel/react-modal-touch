@@ -1,6 +1,6 @@
 {
   "name": "react-modal-touch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is a resizable and draggable react modal that supports touch",
   "repository": {
     "type": "git",
