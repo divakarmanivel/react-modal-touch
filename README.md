@@ -118,7 +118,7 @@ Inside an app:
 ```jsx
 import React, {Component} from 'react';
 import './App.css';
-import ReactModal from 'react-modal-resizable-draggable';
+import ReactModal from 'react-modal-touch';
 
 class App extends Component {
 

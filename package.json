@@ -1,10 +1,10 @@
 {
-  "name": "react-modal-resizable-draggable",
-  "version": "0.1.5",
-  "description": "This is a modal that support resizalbe and draggable function",
+  "name": "react-modal-touch",
+  "version": "0.1.0",
+  "description": "This is a resizable and draggable react modal that supports touch",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wwan5803/react-modal-resizable-draggable.git"
+    "url": "https://github.com/divakarmanivel/react-modal-touch.git"
   },
   "license": "MIT",
   "main": "build/main.js",
@@ -16,7 +16,8 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-motion": "^0.5.2",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "node-sass": "^5.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,8 +25,8 @@
     "build": "webpack --env=production"
   },
   "author": {
-    "name": "Wesley Wang",
-    "email": "wesleywang5803@gmail.com"
+    "name": "Divakar Manivel",
+    "email": "callmedivakar@gmail.com"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.17",

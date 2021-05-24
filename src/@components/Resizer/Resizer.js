@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./index.css";
+import "./Resizer.scss";
 
-class Resizer extends React.Component {
+class Resizer extends Component {
   constructor(props) {
     super(props);
   }
-  handleMouseDown(e) {
+  handleResizing = (e) => {
     this.props.updateStateResizing(true);
   }
   render() {
@@ -17,7 +17,8 @@ class Resizer extends React.Component {
       <div
         className="flexible-modal-resizer"
         style={style}
-        onMouseDown={this.handleMouseDown.bind(this)}
+        onMouseDown={this.handleResizing}
+        onTouchStart={this.handleResizing}
       />
     );
   }
